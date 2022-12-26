@@ -52,5 +52,6 @@ for id in methods:
     print(f"{id} method parameter")
     print(f"Response code: {delete_response.status_code}")
     print(f"Response text: {delete_response.text}", end='\n')
+    print(prob)
 
 

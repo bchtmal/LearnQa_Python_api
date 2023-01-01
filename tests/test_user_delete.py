@@ -164,4 +164,3 @@ class TestUserDelete(BaseCase):
         Assertions.assert_code_status(response5, 200)
         Assertions.assert_json_has_key(response5, "user_id")
 
-# python -m pytest -s tests/test_user_delete.py

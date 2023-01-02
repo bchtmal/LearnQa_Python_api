@@ -14,7 +14,7 @@ class TestUserRegister(BaseCase):
         'email'
     ]
 
-    @allure.description("This test created user successfully")
+    @allure.title("This test created user successfully")
     def test_user_create_successfully(self):
         data = self.prepare_registration_data()
 
@@ -23,7 +23,7 @@ class TestUserRegister(BaseCase):
         Assertions.assert_code_status(response, 200)
         Assertions.assert_json_has_key(response, 'id')
 
-    @allure.description("This test try to create user with existing email")
+    @allure.link('https://www.youtube.com/watch?v=ZC5RdM02bx4',name='open me')
     def test_create_user_with_existing_email(self):
         email = 'vinkotov@example.com'
         data = self.prepare_registration_data(email)
